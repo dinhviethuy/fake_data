@@ -36,8 +36,8 @@ INSERT IGNORE INTO <Tên bảng đang dùng trong BTLBTL>.companies (id, name, d
 SELECT id, name, description, address, logo, created_at, updated_at
 FROM <Tên bảng đã tạo data fake>.company;
 
-INSERT IGNORE INTO <Tên bảng đang dùng trong BTLBTL>.jobs (id, location, salary, quantity, level, start_date, end_date, is_active, name, description, created_at, updated_at, company_id)
-SELECT id, location, salary, quantity, level, start_date, end_date, is_active, name, description, created_at, updated_at, company_id
+INSERT IGNORE INTO <Tên bảng đang dùng trong BTLBTL>.jobs (id, location, salary, quantity, start_date, end_date, is_active, name, description, created_at, updated_at, company_id)
+SELECT id, location, salary, quantity, start_date, end_date, is_active, name, description, created_at, updated_at, company_id
 FROM <Tên bảng đã tạo data fake>.job;
 
 INSERT IGNORE INTO <Tên bảng đang dùng trong BTLBTL>.job_levels (job_id, level)
