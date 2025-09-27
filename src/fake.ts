@@ -1,8 +1,8 @@
 import { faker } from "@faker-js/faker";
 import bcrypt from "bcrypt";
 import { FastifyInstance } from "fastify";
-import envConfig from "~/config";
-import { DESCRIPTION_JOB_FAKE } from "~/constant";
+import envConfig from "./config";
+import { DESCRIPTION_JOB_FAKE } from "./constant";
 
 const userFake = async (fastify: FastifyInstance) => {
   const password = await bcrypt.hash(envConfig.PASSWORD_DEFAULT, 10);
