@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 import bcrypt from "bcrypt";
 import { FastifyInstance } from "fastify";
 import envConfig from "./config";
-import { DESCRIPTION_JOB_FAKE } from "./constant";
+import { DESCRIPTION_FAKE, DESCRIPTION_JOB_FAKE } from "./constant";
 
 const userFake = async (fastify: FastifyInstance) => {
   const password = await bcrypt.hash(envConfig.PASSWORD_DEFAULT, 10);
@@ -33,7 +33,7 @@ const companyFake = async (fastify: FastifyInstance) => {
   const { count } = await fastify.prisma.company.createMany({
     data: Array.from({ length: n }, () => ({
       name: faker.company.name(),
-      description: faker.helpers.arrayElement(DESCRIPTION_JOB_FAKE),
+      description: faker.helpers.arrayElement(DESCRIPTION_FAKE),
       address: faker.location.streetAddress(),
       logo: faker.image.urlPicsumPhotos(),
       created_at: faker.date.recent({ days: 90 }),

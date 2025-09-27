@@ -1,28 +1,15 @@
 export const DESCRIPTION_FAKE = [
-  `<h2>3 Lý Do Để Gia Nhập Công Ty</h2><ul><li>Great opportunity for career development</li><li>Young and international work environment</li><li>Flexible working hours</li></ul>
-   <h2>Mô Tả Công Việc</h2><p><strong>As a Front-end coder, you will:</strong></p>
-   <ul><li>Develop and maintain our web applications using ReactJS, JavaScript and TypeScript</li>
-   <li>Collaborate with the design team to implement user-friendly interfaces</li></ul>
-   <h2>Yêu Cầu Công Việc</h2><ul><li>Bachelor's degree in Computer Science</li><li>At least 2 years of experience in frontend</li></ul>
-   <h2>Tại Sao Bạn Sẽ Yêu Thích Làm Việc Tại Đây</h2><ul><li>Professional and dynamic environment</li><li>Attractive salary and bonus</li></ul>`,
-
-  `<h2>Mô Tả Công Việc</h2>
-   <ul><li>Phát triển tính năng frontend từ bản thiết kế Figma</li>
-   <li>Bảo trì và tối ưu sản phẩm hiện có</li></ul>
-   <h2>Yêu Cầu Công Việc</h2>
-   <ul><li>Kinh nghiệm ReactJS ít nhất 1 năm</li><li>Hiểu biết HTML, CSS, JavaScript</li></ul>
-   <h2>Tại Sao Bạn Sẽ Yêu Thích Làm Việc Tại Đây</h2>
-   <ul><li>Lương tháng 13 + thưởng lễ Tết</li><li>Team building, company trip</li></ul>`,
-
-  `<h2>Top 3 reasons to join us</h2>
-   <ul><li>Hybrid working</li><li>Great Benefits</li><li>Friendly Colleagues</li></ul>
-   <h2>Job description</h2>
-   <ul><li>Gather system domain knowledge</li><li>Work closely with Japanese customers</li></ul>
-   <h2>Your skills and experience</h2>
-   <ul><li>Japanese N2</li><li>1-3 years BrSE experience</li></ul>
-   <h2>Why you'll love working here</h2>
-   <ul><li>Salary review 2 times/year</li><li>Onsite opportunities in Japan</li></ul>`,
-] as const;
+  `<p><strong>Tiki</strong>&nbsp;là viết tắt của “Tìm kiếm &amp; Tiết kiệm”, là tên của website&nbsp;<a href="https://vi.wikipedia.org/wiki/Th%C6%B0%C6%A1ng_m%E1%BA%A1i_%C4%91i%E1%BB%87n_t%E1%BB%AD" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">thương mại điện tử</a>&nbsp;<a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">Việt Nam</a>. Thành lập từ tháng 3 năm 2010<a href="https://vi.wikipedia.org/wiki/Tiki#cite_note-2" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);"><sup>[2]</sup></a>, Tiki hiện đang là trang thương mại điện tử lọt top 2 tại Việt Nam và top 6 tại khu vực&nbsp;<a href="https://vi.wikipedia.org/wiki/%C4%90%C3%B4ng_Nam_%C3%81" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">Đông Nam Á</a>.</p>
+<h2>Lịch sử</h2>
+<p>Khởi đầu của Tiki chỉ là một&nbsp;<a href="https://vi.wikipedia.org/wiki/Website" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">website</a>&nbsp;bán sách trực tuyến. Tháng 3 năm 2012,&nbsp;<a href="https://vi.wikipedia.org/wiki/Qu%E1%BB%B9_%C4%91%E1%BA%A7u_t%C6%B0" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">Quỹ đầu tư</a>&nbsp;CyberAgent Ventures Inc đã quyết định đầu tư vào Tiki<a href="https://vi.wikipedia.org/wiki/Tiki#cite_note-3" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);"><sup>[3]</sup></a>. Với việc đầu tư này, Tiki dần mở rộng thành một sàn thương mại điện tử.</p>
+<p>Giai đoạn năm 2011 – 2012, Tiki trở thành đơn vị kinh doanh sách hàng đầu tại Việt Nam.</p>
+<p>Giai đoạn năm 2013 – 2014, Tiki mở rộng lĩnh vực kinh doanh với rất nhiều ngành hàng khác. Lúc này, ngoài hơn 51.000 đầu sách thì người mua hàng có thể tìm thấy các mặt hàng từ&nbsp;<a href="https://vi.wikipedia.org/wiki/V%C4%83n_ph%C3%B2ng_ph%E1%BA%A9m" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">văn phòng phẩm</a>, nhu yếu phẩm đến điện tử, điện gia dụng,… ở Tiki. Ở giai đoạn này, Tiki bắt đầu đưa vào hoạt động hết công sức nhà kho diện tích rộng lên đến 3.000m2, bắt đầu chiếm lĩnh thị trường thương mại điện tử đang phát triển thần tốc ở Việt Nam.</p>
+<p>Năm 2015, Tiki lọt top 5 website thương mại điện tử nổi bật nhất tại Việt Nam, đánh dấu tên tuổi và minh chứng cho sức ảnh hưởng của Tiki trên thị trường thương mại điện tử cũng như đối với người tiêu dùng Việt Nam.</p>
+<p>Năm 2016, Tiki vươn lên trở thành công ty thương mại điện tử lớn thứ 2 Việt Nam, có mặt ở&nbsp;<a href="https://vi.wikipedia.org/wiki/T%E1%BB%89nh_th%C3%A0nh_Vi%E1%BB%87t_Nam" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">63 tỉnh thành</a>&nbsp;trên khắp cả nước.</p>
+<p>Tháng 4 năm 2017 sau 7 năm thành lập, Tiki đánh dấu bước chuyển mình khi chuyển sang hình thức&nbsp;<a href="https://vi.wikipedia.org/w/index.php?title=Marketplace&amp;action=edit&amp;redlink=1" rel="noopener noreferrer" target="_blank" style="color: rgb(221, 51, 51);">Marketplace</a><a href="https://vi.wikipedia.org/wiki/Tiki#cite_note-4" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);"><sup>[4]</sup></a>, thu hút thêm nhà bán hàng gia nhập hệ thống website của Tiki.vn, mở rộng lên hàng chục ngành hàng với hơn 300.000 sản phẩm được bày bán.</p>
+<p>Vào tháng 6 năm 2020, Tiki đã huy động được khoảng 130 triệu USD từ một vòng tài trợ do công ty cổ phần tư nhân Northstar Group<a href="https://vi.wikipedia.org/wiki/Tiki#cite_note-5" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);"><sup>[5]</sup></a>&nbsp;có trụ sở tại&nbsp;<a href="https://vi.wikipedia.org/wiki/Singapore" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">Singapore</a>&nbsp;dẫn đầu. Ban đầu dự kiến chỉ huy động được 75 triệu&nbsp;<a href="https://vi.wikipedia.org/wiki/%C4%90%C3%B4_la_M%E1%BB%B9" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">USD</a>&nbsp;nhưng sau đó vòng gọi vốn được tăng quy mô nhờ sự hỗ trợ từ các nhà đầu tư Thương mại điện tử khởi nghiệp&nbsp;<a href="https://vi.wikipedia.org/wiki/H%C3%A0n_Qu%E1%BB%91c" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">Hàn Quốc</a>.</p>
+<p>Với tốc độ tăng trưởng bình quân 30%, thị trường thương mại điện tử Việt Nam dự báo đạt 15 tỷ đô trong năm 2020 và nếu duy trì tốc độ tăng trưởng như hiện nay, con số doanh thu sẽ lên tới 33 tỷ USD vào năm 2025, xếp thứ ba trong khu vực&nbsp;<a href="https://vi.wikipedia.org/wiki/ASEAN" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">ASEAN</a>, sau&nbsp;<a href="https://vi.wikipedia.org/wiki/Indonesia" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">Indonesia</a>&nbsp;(100 tỷ USD) và&nbsp;<a href="https://vi.wikipedia.org/wiki/Th%C3%A1i_Lan" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);">Thái Lan</a>&nbsp;(43 tỷ USD).<sup><a href="https://vi.wikipedia.org/wiki/Wikipedia:Ch%C3%BA_th%C3%ADch_ngu%E1%BB%93n_g%E1%BB%91c" rel="noopener noreferrer" target="_blank" style="color: rgb(51, 102, 204);"><em>cần dẫn nguồn</em></a></sup></p>`,
+];
 
 export const DESCRIPTION_JOB_FAKE = [
   `<h2>Top 3 reasons to join us</h2>
