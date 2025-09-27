@@ -17,7 +17,7 @@ const userFake = async (fastify: FastifyInstance) => {
       password: password,
       address: faker.location.streetAddress(),
       age: faker.number.int({ min: 18, max: 60 }),
-      gender: faker.helpers.arrayElement(["male", "female"]),
+      gender: faker.helpers.arrayElement(["MALE", "FEMALE"]),
       created_at: faker.date.recent({ days: 90 }),
       updated_at: faker.date.recent({ days: 90 }),
     })),
@@ -57,7 +57,7 @@ const jobFake = async (fastify: FastifyInstance) => {
     data: Array.from({ length: n }, () => ({
       name: faker.company.name(),
       description: faker.helpers.arrayElement(DESCRIPTION_JOB_FAKE),
-      location: faker.helpers.arrayElement(["hanoi", "hochiminh", "danang"]),
+      location: faker.helpers.arrayElement(["HANOI", "HOCHIMINH", "DANANG"]),
       salary: faker.number.int({ min: 1000000, max: 10000000 }),
       quantity: faker.number.int({ min: 1, max: 10 }),
       level: faker.helpers.arrayElement([
