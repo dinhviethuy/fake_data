@@ -7,7 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model user {
   id        String   @id @default(uuid())
   name      String
   email     String   @unique
@@ -17,10 +17,10 @@ model User {
   gender    String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
-  resumes Resume[]
+  resumes resume[]
 }
 
-model Company {
+model company {
   id        String   @id @default(uuid())
   name      String
   description String  @db.LongText
@@ -28,11 +28,11 @@ model Company {
   logo      String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
-  jobs      Job[]
-  resumes Resume[]
+  jobs      job[]
+  resumes resume[]
 }
 
-model Job {
+model job {
   id        String   @id @default(uuid())
   location  String
   salary    Int
@@ -46,22 +46,22 @@ model Job {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
   company_id String
-  company   Company  @relation(fields: [company_id], references: [id])
-  resumes Resume[]
+  company   company  @relation(fields: [company_id], references: [id])
+  resumes resume[]
   job_skills job_skill[]
   job_levels job_level[]
 }
 
-model Resume {
+  model resume {
   id        String   @id @default(uuid())
   email     String   
   status    String
   user_id String
-  user   User  @relation(fields: [user_id], references: [id])
+  user   user  @relation(fields: [user_id], references: [id])
   company_id String
-  company   Company  @relation(fields: [company_id], references: [id])
+  company   company  @relation(fields: [company_id], references: [id])
   job_id String
-  job   Job  @relation(fields: [job_id], references: [id])
+  job   job  @relation(fields: [job_id], references: [id])
   url     String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
@@ -70,13 +70,13 @@ model Resume {
 model job_skill {
   id        String   @id @default(uuid())
   job_id String
-  job   Job  @relation(fields: [job_id], references: [id])
+  job   job  @relation(fields: [job_id], references: [id])
   skill String
 }
 
 model job_level {
   id        String   @id @default(uuid())
   job_id String
-  job   Job  @relation(fields: [job_id], references: [id])
+  job   job  @relation(fields: [job_id], references: [id])
   level String
 }
