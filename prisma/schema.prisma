@@ -37,7 +37,6 @@ model job {
   location  String
   salary    Int
   quantity  Int
-  level     String
   start_date DateTime
   end_date   DateTime
   is_active  Boolean @default(true)

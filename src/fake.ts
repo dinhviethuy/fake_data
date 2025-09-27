@@ -60,13 +60,6 @@ const jobFake = async (fastify: FastifyInstance) => {
       location: faker.helpers.arrayElement(["HANOI", "HOCHIMINH", "DANANG"]),
       salary: faker.number.int({ min: 1000000, max: 10000000 }),
       quantity: faker.number.int({ min: 1, max: 10 }),
-      level: faker.helpers.arrayElement([
-        "INTERN",
-        "JUNIOR",
-        "SENIOR",
-        "FRESHER",
-        "MIDDLE",
-      ]),
       start_date: faker.date.recent({ days: 90 }),
       end_date: faker.date.future(),
       is_active: true,
@@ -85,7 +78,7 @@ const jobFake = async (fastify: FastifyInstance) => {
       data: Array.from({ length: n }, () => ({
         job_id: faker.helpers.arrayElement(jobs).id,
         skill: faker.helpers.arrayElement([
-          "react",
+          "reactjs",
           "nodejs",
           "mongodb",
           "express",
