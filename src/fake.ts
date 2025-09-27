@@ -78,11 +78,11 @@ const jobFake = async (fastify: FastifyInstance) => {
       data: Array.from({ length: n }, () => ({
         job_id: faker.helpers.arrayElement(jobs).id,
         skill: faker.helpers.arrayElement([
-          "reactjs",
-          "nodejs",
-          "mongodb",
-          "express",
-          "typescript",
+          "UNITY",
+          "PYTHON",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "MYSQL",
         ]),
       })),
     }),
