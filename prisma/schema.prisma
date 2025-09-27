@@ -1,0 +1,82 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String
+  address   String
+  age       Int
+  gender    String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  resumes Resume[]
+}
+
+model Company {
+  id        String   @id @default(uuid())
+  name      String
+  description String
+  address   String
+  logo      String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  jobs      Job[]
+  resumes Resume[]
+}
+
+model Job {
+  id        String   @id @default(uuid())
+  location  String
+  salary    Int
+  quantity  Int
+  level     String
+  start_date DateTime
+  end_date   DateTime
+  is_active  Boolean @default(true)
+  name      String
+  description String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  company_id String
+  company   Company  @relation(fields: [company_id], references: [id])
+  resumes Resume[]
+  job_skills job_skill[]
+  job_levels job_level[]
+}
+
+model Resume {
+  id        String   @id @default(uuid())
+  email     String   
+  status    String
+  user_id String
+  user   User  @relation(fields: [user_id], references: [id])
+  company_id String
+  company   Company  @relation(fields: [company_id], references: [id])
+  job_id String
+  job   Job  @relation(fields: [job_id], references: [id])
+  url     String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model job_skill {
+  id        String   @id @default(uuid())
+  job_id String
+  job   Job  @relation(fields: [job_id], references: [id])
+  skill String
+}
+
+model job_level {
+  id        String   @id @default(uuid())
+  job_id String
+  job   Job  @relation(fields: [job_id], references: [id])
+  level String
+}
