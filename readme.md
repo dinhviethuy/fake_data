@@ -15,8 +15,14 @@ npm i
 
 ### Tạo biến môi trường và thay biến môi trường phù hợp
 
-```
+```bash
 cp .env.example .env
+```
+
+### Chạy init db
+
+```bash
+npx prisma db push
 ```
 
 ### Chạy fake data
@@ -50,5 +56,5 @@ FROM <Tên bảng đã tạo data fake>.job_skill;
 
 INSERT IGNORE INTO <Tên bảng đang dùng trong BTLBTL>.resumes (id, email, status, user_id, company_id, job_id, url, created_at, updated_at)
 SELECT id, email, status, user_id, company_id, job_id, url, created_at, updated_at
-FROM fake.resume;
+FROM <Tên bảng đã tạo data fake>.resume;
 ```
